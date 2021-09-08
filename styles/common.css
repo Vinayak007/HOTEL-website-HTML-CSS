@@ -1,9 +1,10 @@
-/*CHECKPOINT-4*/
+/*CHECKPOINT-5*/
 
 html,body{
     height: 100%;
     width: 100%;
     margin: 0;
+    background-color: #e0e0e0; /*body Color*/
 }
 #main-div{
     height: 100%;
@@ -20,4 +21,7 @@ html,body{
 #RaddisonImage{
     height: 500px;
     width: 500px;
+}
+header,footer{                  
+    background-color: rosybrown;  /* header/footer color*/
 }

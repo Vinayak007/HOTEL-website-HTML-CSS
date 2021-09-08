@@ -1,0 +1,17 @@
+/*Checkpoint 5*/
+
+#raddison-div{
+    width: 50%;
+    height: 20%;
+    background-color: rgb(132,136,139);
+    margin: 2% auto;
+}
+#discription-1-div{    
+   margin: 2%;
+}
+#discription-2-div{
+   padding: 1% 2%;
+   margin:2%;
+   border: 1px solid black;
+   border-radius: 5px;
+}

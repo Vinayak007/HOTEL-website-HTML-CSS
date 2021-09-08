@@ -1,0 +1,11 @@
+/*Checkpoint 5*/
+#loader-div{       /* styling for loader*/
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 12px solid #f3f3f3;
+    border-top: 12px solid  #444444;
+    margin:auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}

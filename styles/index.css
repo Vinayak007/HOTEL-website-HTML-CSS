@@ -1,6 +1,19 @@
-/*CHECKPOINT-4*/
+/*CHECKPOINT-5*/
 
 #CityImage{
     height: 150px;
     width: 150px;
+    border-radius: 25%;   /* border radius & padding*/
+    padding: 4%;
+}
+#SearchBar-div{    /* Backgrounf Image for Search Bar added*/
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+    height: 380px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+#CityCards{
+    margin-left: 14%;
+    margin-right: 14%;
 }
