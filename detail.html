@@ -7,17 +7,39 @@
     <title>Hotel-Reservation-System</title>
 </head>
 <body>
-      <!--Checkpoint 2-->
+      <!--Checkpoint 3-->
+      
       <div id="main-div">
          <div id="header-div">
-             <img width="150px" height="200px" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
-             <br>
+            <a href="index.html">
+                <img width="150px" height="200px" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
+            </a>
+            <br>
              <a href="login.html">Login</a>
          </div>
          <div id="content-div">
            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
            <br>
-           <a href="payment.html">Book Now</a>
+           <form action="payment.html">
+
+            <label for="num">Adults:</label> 
+            <input type="number" id="num" min="1" required>
+            <br>
+             <label for="name">Name:</label>
+             <input type="text" id="name" required>
+             <br>
+             <label for="pdate">From Date:</label>
+             <input type="date" id="pdate" required>
+             <br> 
+             <label for="ptdate">To  Date :</label>
+              <input type="date" id="ptdate" required>
+              <br>
+              <label for="number1">Total  :</label>
+              <input type="number" id="number1" readonly>
+              <br>
+              <button type="submit">Book Now</button>
+
+           </form>
            <h2>Radisson Blu Hotel</h2>
            <h3>RATINGS</h3>
            <h3>5 Star</h3>
