@@ -1,0 +1,23 @@
+/*CHECKPOINT-4*/
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#main-div{
+    height: 100%;
+    width: 100%;
+}
+#LOGO{
+    height: 60px;
+    width: 60px;
+}
+#SocialMedia{
+    height: 20px;
+    width: 22px;
+}
+#RaddisonImage{
+    height: 500px;
+    width: 500px;
+}
