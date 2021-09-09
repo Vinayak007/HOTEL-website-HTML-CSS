@@ -7,6 +7,8 @@
     <title>Hotel-Reservation-System</title>
     <link rel="stylesheet" href="styles/common.css"> <!--Common Styling Link-->
     <link rel="stylesheet" href="styles/list.css">   <!--List CSS file-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> <!--font CSS-->
+
 
 </head>
 <body>
@@ -19,36 +21,40 @@
             <a href="index.html">
                 <img id="LOGO" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
             </a>          
-            <br>
-            <a href="login.html">Login</a>
-
+            <a id="login" href="login.html">Login</a>
+    
     </header>
+    
+    <div id="space">&nbsp;</div>
 
     <div id="content-div">
-                <ul>
-                    <li><a href="#ListView">List View</a></li>
-                    <li><a href="#MapView">Map View</a></li>
-                </ul>
+
+        <div id="list-map-div">   <!--div for list & map view-->
+                   <a href="#ListView" style="padding:1% 1% 0 0;" ><b>List View</b></a>
+                    <a href="#MapView" style="padding:1% 0 0 1%;"><b>Map View</b></a>
+        </div>
 
            
-        <div id="ListView">   <!--new div created for all hotels--> 
-            <div id="hotel-div">  <!--div container for each hotel--> 
-               <a href="detail.html">            
+        <div id="ListView"> 
+         
+            <div id="hotel-div" class="ho-1"> 
+                <a href="detail.html">             
                 <img id="HotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" >
                    <h3>Radisson Blue Hotel</h3>
                    <h4>5 Star</h4>
                    <h4>New delhi</h4>
-               </a> 
+                </a>    
             </div>
+        
 
-            <div id="hotel-div">
+            <div id="hotel-div" class="ho-2">
                <img id="HotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
                    <h3>The Lalit Hotel</h3>
                    <h4>4.5 Star</h4>
                    <h4>New delhi</h4>
             </div>
 
-            <div id="hotel-div">    
+            <div id="hotel-div" class="ho-3">    
                <img id="HotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
                    <h3>Taj Palace</h3>
                    <h4>4 Star</h4>
@@ -64,15 +70,24 @@
 
     </div>
 
+    <div id="space">&nbsp;</div>
+
     <footer>
 
-           <a href="contact.html">Contact Us</a>
-           <br>
-           <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png">
-           <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png">
-           <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png">
-           <br> 
-           &copy; 2020 ROOM SERACH PVT LTD
+            <div id="contact">  <!--div for Contact-->
+            <a href="contact.html">Contact Us</a>
+            </div>
+    
+            <div id="copyRight">  <!--div for Copy Right-->  
+            &copy; 2020 ROOM SERACH PVT LTD
+            </div>
+    
+            <div id="social">    <!--div for social Media-->
+            <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png">
+            <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png">
+            <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png">
+            </div>
+    
 
     </footer>
      

@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel-Reservation-System</title>
-    <link rel="stylesheet" href="styles/common.css"> <!--Common Styling Link-->
-    <link rel="stylesheet" href="styles/index.css">  <!--Index CSS file-->
+
+    <link rel="stylesheet" href="styles/common.css"> 
+    <link rel="stylesheet" href="styles/index.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> <!--font CSS-->
     
 </head>
 <body>
-      <!--Checkpoint 5-->
+                                           <!--Checkpoint 6-->
 
 
 <div id="main-div">
     
-    <header>             <!--HTML 5 & Css for LOGO-->
-            <img id="LOGO" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
-            <br>
-            <a href="login.html">Login</a>
-
+    <header>             
+           
+            <img class="logo-Image" id="LOGO" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
+            <a id="login" href="login.html">Login</a>
     </header>
-
+    
+    <div id="space">&nbsp;</div>
+    
     <div id="content-div">
 
-        <div id="SearchBar-div"> <!--div for background image-->
-            <input id="SearchBar" type="text" placeholder="City" autocomplete="off"> <!--Search Bar Image added-->
+        <div id="SearchBar-div">
+            <div id="input-div">   <!--div for input -->
+            <input id="Search" type="text" placeholder="City" autocomplete="off"> 
+            </div>
         </div>
 
-        <div id="CityCards"> <!--div for all City-->
-            <a href="list.html">                       <!--Css for City Image-->
+        <div id="CityCards"> 
+            <a href="list.html">                      
             <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg
             ">
             </a>
@@ -40,18 +45,28 @@
             <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg
             ">
         </div>
-          
+        <div id="view-div">     <!--div for View More-->
             <a href="index.html">View more>></a>
+        </div>    
     </div>
 
-    <footer>  <!--HTML 5-->
-            <a href="contact.html">Contact Us</a>  
-            <br>                                        <!--Css for Social Media-->
+    <div id="space">&nbsp;</div>
+    
+    <footer> 
+            <div id="contact">  <!--div for Contact-->
+            <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div id="copyRight">  <!--div for Copy Right-->  
+            &copy; 2020 ROOM SERACH PVT LTD
+            </div>
+
+            <div id="social">    <!--div for social Media-->
             <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png">
             <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png">
             <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png">
-            <br> 
-            &copy; 2020 ROOM SERACH PVT LTD
+            </div>
+            
     </footer>
 
 
