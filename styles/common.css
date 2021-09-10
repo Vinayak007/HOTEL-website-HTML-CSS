@@ -1,4 +1,4 @@
-/*CHECKPOINT-7*/
+/*CHECKPOINT-8*/
 
 html,body{
     height: 100%;
@@ -10,8 +10,8 @@ body{
     font-family:'Ubuntu', sans-serif;
 }
 a{
-    text-decoration: none;
-    color:black;
+   
+    
 }
 #main-div{
     height: 100%;
@@ -27,7 +27,7 @@ header{
     width: 100%;
     z-index: 1;
 
-    display: flex;                     /* flex property  HEADER*/
+    display: flex;                     
     align-items: center;
     justify-content: space-between;
 }
@@ -40,7 +40,7 @@ footer{
 
     clear: left;
     
-    display: flex;                   /* flex property FOOTER*/
+    display: flex;                  
     align-items: center;
     justify-content: space-between;
 }
@@ -58,14 +58,17 @@ footer{
     width: 500px;
 }
 #login{                            
-    margin-right: 2%;                 /* margin reset*/
+    margin-right: 2%;                 
   }
  #contact{                  
-     margin-left: 2%;                 /* margin reset*/
+     margin-left: 2%;               
  }
  #social{                 
-    margin-right: 1%;                  /* margin reset*/
+    margin-right: 1%;               
  }
  #copyRight{                
-     font-size: 10px;                  /* margin reset*/
+     font-size: 10px;                  
  }
+ #login-footer{             /* Login modal footer*/
+    text-align: center;
+}       

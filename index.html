@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel-Reservation-System</title>
+     
+                                              <!--bootstrap link -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
     <link rel="stylesheet" href="styles/common.css"> 
     <link rel="stylesheet" href="styles/index.css">  
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
-    
+     
 </head>
 <body>
-                                           <!--Checkpoint 7-->
+                                           <!--Checkpoint 8-->
 
 
 <div id="main-div">
@@ -20,7 +25,43 @@
     <header>             
            
             <img  id="LOGO" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
-            <a id="login" href="login.html">Login</a>
+<!--LOGIN MODAL START-->
+            <button id="login" class=" btn btn-light btn-sm" data-toggle="modal" data-target="#login-modal" data-backdrop="false">LOGIN</button>
+            <div id="login-modal" class="modal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Please Login</h4>
+                        </div>
+                        <div class="modal-body">
+                               <form class="form-horizontal">
+                                     <div class="form-group">
+                                           <label class="control-label col-sm-3" for="username">
+                                               Username:
+                                           </label>
+                                           <div class="col-sm-9">
+                                               <input type="text" id="username" class="form-control" placeholder="Enter username" name="username" required>
+                                           </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label class="control-label col-sm-3" for="password">
+                                           Password:
+                                       </label>
+                                       <div class="col-sm-9">
+                                           <input type="password" id="password" class="form-control" placeholder="Enter password" name="uname" autocomplete="off" required>
+                                       </div>
+                                 </div>
+                               </form>
+                        </div>
+                        <div class="modal-footer" id="login-footer">
+                              <button type="button" class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+
+                </div>
+              </div>     
+<!--LOGIN MODAL END-->           
     </header>
     
     
@@ -57,17 +98,51 @@
                     <div id="overlay"><p>Kolkata</p></div>
             </div>        
         </div>
+       
         <div id="view-div">     
-            <a href="index.html">View more>></a>
-        </div>    
+            <a href="index.html">         <!--Bootstrap button-->
+                <button id="view-button" type="button" class="btn btn-secondary">View More</button>
+            </a>
+        </div>
+        
+        
     </div>
 
    
     
     <footer> 
-            <div id="contact">  
-            <a href="contact.html">Contact Us</a>
+            <button id="contact" class=" btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal" data-backdrop="false">Contact Us</button>
+<!--Contact Modal START-->
+<div id="contact-modal" class="modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Get in touch</h4>
             </div>
+            <div class="modal-body">
+                   <h5>Thank you for reaching out!!!</h5>
+                   <h5>Please enter your email and we will get back to you</h5>
+                   <form class="form-horizontal">
+                         <div class="form-group">
+                               <label class="control-label col-sm-1" for="email">
+                                   Email:
+                               </label>
+                               <div class="col-sm-6">
+                                   <input type="email" id="email" class="form-control" placeholder="Enter your email id" name="email" required>
+                               </div>
+                         </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+    </div>
+  </div>        
+  
+<!--Contact Modal END-->
 
             <div id="copyRight"> 
             &copy; 2020 ROOM SERACH PVT LTD

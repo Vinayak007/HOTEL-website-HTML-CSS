@@ -56,5 +56,13 @@ span{
 padding:5px;
 margin: 0 154px 0 0;
 }
+.btn-outline-success{
+   color:green;
+   border-color:green;
+}
+.btn-outline-success:hover{
+   background-color: green;
+   color:white;
+}
 
 

@@ -4,7 +4,7 @@
     height: 150px;
     width: 150px;
     border-radius: 25%;   
-    box-shadow:10px 10px 10px grey;         /* shadow added*/
+    box-shadow:10px 10px 10px grey;        
 }
 #SearchBar-div{   
     background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
@@ -63,16 +63,18 @@
 #overlay p{                           /* p styling */
     color: #f1f1f1;
     position: relative;
-    top:30%;
+    top:45%;
 }
 #city-container:hover  #overlay{     /* hovering overlay*/
     opacity:1;
 }
 #content-div{
     margin-top: 60px;
-    margin-bottom: 60px;
- }
-
+}
+#view-button{
+    background-color:gray;
+    color: white;
+}
 
 
 
