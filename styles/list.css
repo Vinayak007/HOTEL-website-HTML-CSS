@@ -7,29 +7,17 @@
 #hotel-div{      /* hotel container*/     
      width: 40%;
      background-color: rgb(132,136,139);
+     margin: 5%;
+     
+     float: left;
 }
 #list-map-div{             /*list map decoration*/
      height: 20px;
      padding: 10px;
      text-align: center;
 }  
-.ho-1{                   /*margin alignment*/
-     float: left;
-     margin: 2% 0 3% 3%;
-}
-.ho-2{                   /* margin alignment*/
-     float: right;
-     margin: 2% 3% 1% 0;
-}
-.ho-3{                   /* margin alignment*/
-     clear: both;
-     margin: 2% 0 2% 3%;
-}
-
 #MapView{                /*MAP display setting*/
-   
-     display: none;
-
+   display: none
 }
    
     

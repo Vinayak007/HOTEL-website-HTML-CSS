@@ -17,6 +17,30 @@ a{
     height: 100%;
     width: 100%;
 }
+header,footer{                  
+    background-color: rosybrown; 
+}
+header{                         /* header fixed*/
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+}
+footer{                            /*footer relative*/
+    position: relative;           /* footer fixed is not working properly*/
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+
+    clear: left;               /* to handle float*/
+}
+#content-div{
+    margin-top: 60px;
+    margin-bottom: 60px;
+   
+}
 #LOGO{
     height: 60px;
     width: 60px;
@@ -29,29 +53,11 @@ a{
     height: 500px;
     width: 500px;
 }
-header,footer{                  
-    background-color: rosybrown; 
-}
-header{                         /* header fixed*/
-    position: fixed;
-    top: 0;
-    height: 60px;
-    width: 100%;
-    z-index: 1;
-}
-footer{                       /*footer fixed*/
-    position: fixed;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
-}
 #login{                     /* positioning LOGIN*/
     float: right;
     margin: 1.5% 1.5% 0 0;
  }
-#space{
-    height: 60px;
-}
+
 #contact{                   /* positioning CONTACT US*/
     float: left;
     margin:1.5%;

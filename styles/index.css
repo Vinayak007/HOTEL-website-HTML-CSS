@@ -16,8 +16,8 @@
 }
 #input-div{                 /* positioning  input*/
     position: absolute;
-    top: 50%;
-    bottom: 50%;
+    top: 45%;
+    bottom: 55%;
     left:35%;
     right: 35%;
 } 
