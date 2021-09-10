@@ -1,10 +1,60 @@
-/* Checkpoint 5*/
+                                               /* Checkpoint 7*/
+
 #raddison-div{
-   margin: 2% 4% 0 4%;
+   padding: 10px;
+
+   display: flex;                                /* flex property*/
+   align-items:center ;
+   justify-content: center;
+
+   flex: 2;   
 }
 #form-div{
-   margin: 0 4% 1% 4%;
+   border-left: 1px solid black;              
+   flex: 1;
+}
+#RaddisonImage{
+   max-height: 350px;                           /* raddison max-height*/
+}
+#contianer-image-form{                          
+   max-height: 400px;                           /* container max-height*/
+
+   margin: 2% 2% 2% 2%;                         /* flex for image & form container */
+   border: 1px solid black;
+
+   display: flex;                      
+   justify-content: flex-end;
 }
 #discription-div{
-   margin: 1% 4% 2% 4%;
+   margin: 1% 4% 2% 2%;
 }
+span{
+   font-family:cursive;                         /* font - cursive*/
+} 
+#space{
+   height: 60px;
+}
+.wrapper{                                      /* form STYLING */
+   list-style-type: none;
+   width: auto;    
+}
+.form-row{
+   display: flex;
+   justify-content: flex-end;
+   padding-top:2% ;
+   padding-right:3% ;
+   padding-bottom: 7%;
+}
+.form-row > label{
+   padding: 0 2% 0 0; 
+   flex: 1;
+}
+.form-row > input{
+  flex: 2;
+}
+.form-row > button{
+padding:5px;
+margin: 0 154px 0 0;
+}
+
+

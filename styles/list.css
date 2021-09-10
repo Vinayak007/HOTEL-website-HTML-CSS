@@ -1,23 +1,36 @@
-/*Checkpoint 6*/
+/*Checkpoint 7*/
 
 #HotelImage{
      height: 250px;
      width: 250px;
 }
-#hotel-div{      /* hotel container*/     
+#hotel-div{                    /* hotel container*/     
      width: 40%;
-     background-color: rgb(132,136,139);
-     margin: 5%;
+     background-color:lightgrey;
+     margin: 4%;
      
      float: left;
+     display: flex;             /* flex property for each hotel*/
+     align-content: center;
+     justify-content: flex-start;
 }
-#list-map-div{             /*list map decoration*/
+#hotel-info{
+     margin-left: 2%;
+}
+#list-map-div{             
      height: 20px;
      padding: 10px;
-     text-align: center;
+     
+     display: flex;              /* flex property */
+     align-items: center;
+     justify-content: center;
 }  
-#MapView{                /*MAP display setting*/
+#MapView{                
    display: none
+}
+#content-div{
+     margin-top: 60px;
+     margin-bottom: 60px;
 }
    
     

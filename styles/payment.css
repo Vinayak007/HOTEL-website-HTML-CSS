@@ -1,17 +1,57 @@
-/*Checkpoint 5*/
+/*Checkpoint 7*/
 
-#raddison-div{
-    width: 50%;
-    height: 20%;
-    background-color: rgb(132,136,139);
-    margin: 2% auto;
+#content-div{                                 /* flex property */
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
 }
-#discription-1-div{    
-   margin: 2%;
+#raddison-div{
+    margin: 2% auto;
+    width: 50%;
+    background-color: rgb(132,136,139);
+
+    display: flex;                         /* flex property for  hotel*/
+    align-items: center;
+    justify-content: flex-start;
+}
+#hotel-info{
+   margin-left: 2%;
+}
+
+#RaddisonImage{
+   max-width: 270px;                        /* raddsison image max size */
+   max-height: 300px;
+}
+b{
+   font-family: cursive;
+}
+#space{
+   height: 60px;
+}
+#block{                                     /* block container for 3 inner divs*/
+    margin: 0 2% 4% 2%;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid black;
+    background: rosybrown;
+
+    display: flex;
+}
+#discription-1-div , #discription-2-div, #payNow-div{
+   
+    flex: 1;                                   /* flex property */
+}
+#payNow-div{
+   margin-top: 5%;                         
+   text-align: center;
+}
+#discription-1-div{
+   margin-left: 10%;
 }
 #discription-2-div{
-   padding: 1% 2%;
-   margin:2%;
-   border: 1px solid black;
-   border-radius: 5px;
+   margin-top: 3%;
 }
+
+
+
+

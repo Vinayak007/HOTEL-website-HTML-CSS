@@ -1,10 +1,10 @@
-/*CHECKPOINT-6*/
+/*CHECKPOINT-7*/
 
 html,body{
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: #e0e0e0; /*body Color*/
+    background-color: #e0e0e0;
 }
 body{
     font-family:'Ubuntu', sans-serif;
@@ -20,30 +20,34 @@ a{
 header,footer{                  
     background-color: rosybrown; 
 }
-header{                         /* header fixed*/
+header{                       
     position: fixed;
     top: 0;
     height: 60px;
     width: 100%;
     z-index: 1;
+
+    display: flex;                     /* flex property  HEADER*/
+    align-items: center;
+    justify-content: space-between;
 }
-footer{                            /*footer relative*/
-    position: relative;           /* footer fixed is not working properly*/
+footer{                           
+    position: relative;         
     bottom: 0;
     height: 60px;
     width: 100%;
     z-index: 1;
 
-    clear: left;               /* to handle float*/
-}
-#content-div{
-    margin-top: 60px;
-    margin-bottom: 60px;
-   
+    clear: left;
+    
+    display: flex;                   /* flex property FOOTER*/
+    align-items: center;
+    justify-content: space-between;
 }
 #LOGO{
     height: 60px;
     width: 60px;
+    margin-left: 1%;
 }
 #SocialMedia{
     height: 20px;
@@ -53,22 +57,15 @@ footer{                            /*footer relative*/
     height: 500px;
     width: 500px;
 }
-#login{                     /* positioning LOGIN*/
-    float: right;
-    margin: 1.5% 1.5% 0 0;
+#login{                            
+    margin-right: 2%;                 /* margin reset*/
+  }
+ #contact{                  
+     margin-left: 2%;                 /* margin reset*/
  }
-
-#contact{                   /* positioning CONTACT US*/
-    float: left;
-    margin:1.5%;
-}
-#social{                   /* positioning SOCIAL MEDIA*/
-   float: right;
-   margin: 1.5%;
-}
-#copyRight{                 /*positioning COPY RIGHT*/
-    position: absolute;
-    bottom: 0;
-    left: 44%;
-    font-size: 10px;
-}
+ #social{                 
+    margin-right: 1%;                  /* margin reset*/
+ }
+ #copyRight{                
+     font-size: 10px;                  /* margin reset*/
+ }

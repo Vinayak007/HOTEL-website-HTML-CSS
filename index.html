@@ -8,18 +8,18 @@
 
     <link rel="stylesheet" href="styles/common.css"> 
     <link rel="stylesheet" href="styles/index.css">  
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> <!--font CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
     
 </head>
 <body>
-                                           <!--Checkpoint 6-->
+                                           <!--Checkpoint 7-->
 
 
 <div id="main-div">
     
     <header>             
            
-            <img class="logo-Image" id="LOGO" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
+            <img  id="LOGO" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
             <a id="login" href="login.html">Login</a>
     </header>
     
@@ -28,40 +28,52 @@
     <div id="content-div">
 
         <div id="SearchBar-div">
-            <div id="input-div">   <!--div for input -->
+            <div id="input-div">       <!--div for input -->
             <input id="Search" type="text" placeholder="City" autocomplete="off"> 
             </div>
         </div>
 
-        <div id="CityCards"> 
-            <a href="list.html">                      
-            <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg
-            ">
-            </a>
-            <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg
-            ">
-            <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg
-            ">
-            <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg
-            ">
+        <div id="CityCards">
+            
+            <div id="city-container">  <!--City container-->
+                <a href="list.html">                      
+                    <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
+                     <div id="overlay"><p>Delhi</p></div>       <!--overlay-->
+                </a>
+            </div>
+           
+            <div id="city-container">
+                    <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
+                    <div id="overlay"><p>Goa</p></div>
+            </div>
+
+            <div id="city-container">
+                    <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
+                     <div id="overlay"><p>Hyderabad</p></div>
+            </div>
+
+            <div id="city-container">
+                    <img id="CityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
+                    <div id="overlay"><p>Kolkata</p></div>
+            </div>        
         </div>
-        <div id="view-div">     <!--div for View More-->
+        <div id="view-div">     
             <a href="index.html">View more>></a>
         </div>    
     </div>
 
-    
+   
     
     <footer> 
-            <div id="contact">  <!--div for Contact-->
+            <div id="contact">  
             <a href="contact.html">Contact Us</a>
             </div>
 
-            <div id="copyRight">  <!--div for Copy Right-->  
+            <div id="copyRight"> 
             &copy; 2020 ROOM SERACH PVT LTD
             </div>
 
-            <div id="social">    <!--div for social Media-->
+            <div id="social">    
             <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png">
             <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png">
             <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png">

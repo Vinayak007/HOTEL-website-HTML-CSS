@@ -11,7 +11,7 @@
 
 </head>
 <body>
-      <!--Checkpoint 5-->
+                                              <!--Checkpoint 7-->
 
 <div id="main-div">
 
@@ -23,42 +23,56 @@
            
             <a id="login" href="login.html">Login</a>
     </header>
-
     
+    <div id="space">&nbsp;</div>
 
     <div id="content-div">
-        
-        <div id="raddison-div">  <!--div for raddion hotel-->
-           <img id="RaddisonImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-        </div>
+       
+        <div id="contianer-image-form">     <!--container for image & form-->
+            <div id="raddison-div"> 
+                 <img id="RaddisonImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+            </div>
 
-        <div id="form-div">     <!--div for form-->
-           <form action="payment.html">
+                <div id="form-div">     
+                    <form action="payment.html" autocomplete="off"> 
 
-            <label for="num">Adults:</label> 
-            <input type="number" id="num" min="1" required>
-            <br>
-             <label for="name">Name:</label>
-             <input type="text" id="name" required autocomplete="off"> <!--Autocomplete added-->
-             <br>
-             <label for="pdate">From Date:</label>
-             <input type="date" id="pdate" required>
-             <br> 
-             <label for="ptdate">To  Date :</label>
-              <input type="date" id="ptdate" required>
-              <br>
-              <label for="number1">Total  :</label>
-              <input type="number" id="number1" readonly>
-              <br>
-              <button type="submit">Book Now</button>
-            </form>
-        </div>
+                        <ul class="wrapper">   <!--form creation using FLEX-->
+
+                            <li class="form-row">       <!--for each label & input-->
+                               <label for="num">Adults:</label> 
+                               <input type="number" id="num" min="1" required>
+                            </li>
+                            <li class="form-row">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" required>
+                             </li>
+                             <li class="form-row">
+                                <label for="pdate">From Date:</label>
+                                <input type="date" id="pdate" required>
+                             </li>
+                             <li class="form-row">   
+                                 <label for="ptdate">To  Date :</label>
+                                 <input type="date" id="ptdate" required>
+                             </li>
+                             <li class="form-row">
+                                 <label for="number1">Total  :</label>
+                                 <input type="number" id="number1" readonly>
+                             </li>
+                             <li class="form-row">
+                                 <button type="submit">Book Now</button>
+                             </li>
+ 
+                         <ul>
+ 
+                     </form>
+                </div>
+         </div>        
            
-        <div id="discription-div"> <!--div for discription-->
+        <div id="discription-div">       
            <h2>Radisson Blu Hotel</h2>
-           <h3>RATINGS</h3>
-           <h3>5 Star</h3>
-           <h3>AMENITIES</h3>
+           <h3><span>RATINGS</span></h3>             <!--span-->
+           <p>5 Star</p>
+           <h3><span>AMENITIES</span></h3>           <!--span --> 
      <ul>
          <li>Room service</li>
           <li>Restaurant</li>
@@ -66,7 +80,7 @@
           <li>Fitness center</li>
           <li>Pool</li>
      </ul> 
-          <h3>DESCRIPTION</h3>
+          <h3><span>DESCRIPTION</span></h3>          <!--span-->
           <p>
            Just testing the website for project
           </p> 
