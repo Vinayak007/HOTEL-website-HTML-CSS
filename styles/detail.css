@@ -1,7 +1,7 @@
-                                               /* Checkpoint 7*/
+                                               /* Checkpoint 9*/
 
 #raddison-div{
-   padding: 10px;
+   padding: 10px 0 10px 0;
 
    display: flex;                                /* flex property*/
    align-items:center ;
@@ -13,8 +13,8 @@
    border-left: 1px solid black;              
    flex: 1;
 }
-#RaddisonImage{
-   max-height: 350px;                           /* raddison max-height*/
+#slide-image{    /*slide-show image */
+   max-height: 350px;                           
 }
 #contianer-image-form{                          
    max-height: 400px;                           /* container max-height*/
@@ -41,9 +41,9 @@ span{
 .form-row{
    display: flex;
    justify-content: flex-end;
-   padding-top:2% ;
-   padding-right:3% ;
-   padding-bottom: 7%;
+   padding-top:3% ;
+   padding-right:6% ;
+   padding-bottom: 5%;
 }
 .form-row > label{
    padding: 0 2% 0 0; 
@@ -54,7 +54,7 @@ span{
 }
 .form-row > button{
 padding:5px;
-margin: 0 154px 0 0;
+margin-right: 43%;
 }
 .btn-outline-success{
    color:green;
@@ -64,5 +64,37 @@ margin: 0 154px 0 0;
    background-color: green;
    color:white;
 }
-
+.glyphicon-star{                  /* All star color GOLD*/
+   color: gold;
+}
+.carousel-control-prev-icon{                    /* carousel added*/
+   position: relative;
+   background-image: none;
+ }
+ .carousel-control-prev-icon::before{
+     content: '<';
+     font-size: 55px;
+     position: absolute;
+     color:rosybrown;
+     top:-40px;
+     left:-150px;
+     
+ }
+ .carousel-control-next-icon{
+   position: relative;
+   background-image: none;
+ }
+ .carousel-control-next-icon::before{
+     content: '>';
+     font-size: 55px;
+     position: absolute;
+     color:rosybrown;
+     top:-30px;
+     left:100px;
+     
+ }
+ #hotel-slide{
+     width: 70%;
+     margin: auto;
+ }
 
