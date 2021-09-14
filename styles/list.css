@@ -65,5 +65,33 @@
      top:0;
      left:0;
 }
-   
-    
+@media  screen and (max-width:576px){              /* media query for max-width-576px*/
+#hotel-div{
+       clear: left;
+       flex-direction: column;
+       width: fit-content;
+}
+#HotelImage{
+       width: 90vw; 
+}
+#MapView img{
+       width: 100vw;
+}
+#MapView{
+       margin-bottom: 70%;
+}
+
+}   
+@media screen and (min-width:576px) and (max-width:768px){   /* media query for min-width-576px & max-width-768px*/
+#hotel-div{
+        clear: left;
+        width: 90%;
+}
+#MapView img{
+     width: 100vw;
+}
+#MapView{
+     margin-bottom: 48%;
+}
+
+}    

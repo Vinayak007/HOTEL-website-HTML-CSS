@@ -76,6 +76,30 @@
     color: white;
 }
 
-
+@media  screen and (max-width:576px){                /* media query for max-width-576px*/
+    #CityCards{
+        
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+    #CityImage{
+        margin-bottom: 30px;
+    }
+    #view-div{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px){ /* media query for min-width-576px & max-width-768px*/
+    #city-container{
+        margin: 3%;
+    }
+    #CityCards{
+        flex-wrap: wrap;
+    }
+    #CityImage{
+      width: 30vw ;
+      height:25vh;
+    }
+}
 
 

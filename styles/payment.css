@@ -1,4 +1,4 @@
-/*Checkpoint 7*/
+/*Checkpoint 9*/
 
 #content-div{                                 /* flex property */
    display: flex;
@@ -51,7 +51,27 @@ b{
 #discription-2-div{
    margin-top: 3%;
 }
-
+@media  screen and (max-width:576px){             /* media query for max-width-576px*/
+   #raddison-div{
+      flex-direction: column;
+      width: 95%;
+   }
+   #block{
+      flex-direction: column;
+   }
+   #discription-1-div,#discription-2-div{
+      margin-left: 2%;
+   }
+   
+}
+@media screen and (min-width:576px) and (max-width:768px){     /* media query for min-width-576px & max-width-768px*/
+   #raddison-div{ 
+      width: 65%;
+   }
+   #block{
+      margin-bottom: 51%;
+   }
+}
 
 
 

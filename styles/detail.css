@@ -7,14 +7,14 @@
    align-items:center ;
    justify-content: center;
 
-   flex: 2;   
+   flex: 3;   
 }
 #form-div{
    border-left: 1px solid black;              
    flex: 1;
 }
 #slide-image{    /*slide-show image */
-   max-height: 350px;                           
+    height: 350px;                           
 }
 #contianer-image-form{                          
    max-height: 400px;                           /* container max-height*/
@@ -24,6 +24,7 @@
 
    display: flex;                      
    justify-content: flex-end;
+
 }
 #discription-div{
    margin: 1% 4% 2% 2%;
@@ -34,67 +35,105 @@ span{
 #space{
    height: 60px;
 }
-.wrapper{                                      /* form STYLING */
-   list-style-type: none;
-   width: auto;    
+ #hotel-slide{
+           width: 50%;
 }
-.form-row{
+#form-row{
    display: flex;
-   justify-content: flex-end;
-   padding-top:3% ;
-   padding-right:6% ;
-   padding-bottom: 5%;
+   flex: 1 1 0;
+   margin: 2% 2% 5% 2%;
+   justify-content: space-between;
 }
-.form-row > label{
-   padding: 0 2% 0 0; 
-   flex: 1;
+#form-row input{
+   width: 60%;
 }
-.form-row > input{
-  flex: 2;
+#bookNow{
+   display: block;
+   margin: 0 auto;
 }
-.form-row > button{
-padding:5px;
-margin-right: 43%;
+
+.carousel-control-prev-icon{
+  position: relative;
+  background: none;
 }
-.btn-outline-success{
-   color:green;
-   border-color:green;
+.carousel-control-next-icon{
+   position: relative;
+   background: none;
 }
-.btn-outline-success:hover{
-   background-color: green;
-   color:white;
+.carousel-control-prev-icon::before{        /* content before for prev icon*/
+   content: '<';
+   font-size: 55px;
+   color: rosybrown;
+   position: absolute;
+   top: -35px;
+   left:-100px;
+  
 }
-.glyphicon-star{                  /* All star color GOLD*/
+.carousel-control-next-icon::after{       /* content after for next icon*/
+   content: '>';
+   font-size: 55px;
+   color: rosybrown;
+   position: absolute;
+   top: -35px;
+   right: -95px;
+}
+.bi-star-fill{
    color: gold;
 }
-.carousel-control-prev-icon{                    /* carousel added*/
-   position: relative;
-   background-image: none;
- }
- .carousel-control-prev-icon::before{
-     content: '<';
-     font-size: 55px;
-     position: absolute;
-     color:rosybrown;
-     top:-40px;
-     left:-150px;
-     
- }
- .carousel-control-next-icon{
-   position: relative;
-   background-image: none;
- }
- .carousel-control-next-icon::before{
-     content: '>';
-     font-size: 55px;
-     position: absolute;
-     color:rosybrown;
-     top:-30px;
-     left:100px;
-     
- }
- #hotel-slide{
-     width: 70%;
-     margin: auto;
- }
-
+@media  screen and (max-width:576px){         /* media query for max-width-576px*/
+   #contianer-image-form{
+     flex-direction: column;
+     border: none;
+   }
+   #space{
+      height: 55%;
+   }
+   #raddison-div{
+     padding: 1%;
+   border: 1px solid black;
+   margin-bottom: 2%;
+   }
+   #form-div{
+     padding-bottom: 10px;
+     border-top: 1px solid black;
+     border-right: 1px solid black;
+     border-bottom: 1px solid black;
+     margin-bottom: 2%;
+   }
+   #content-div{
+      flex-direction: column;
+   }
+   #hotel-slide{
+      width: auto;
+      margin: 0;
+   }
+   .carousel-control-prev-icon::before{
+      left:-10px;
+   }
+   .carousel-control-next-icon::after{
+      right: -10px;
+   }
+  
+}   
+@media screen and (min-width:576px) and (max-width:768px){   /* media query for min-width-576px & max-width-768px*/
+   #raddison-div{
+      padding: 10px 10px 10px 10px;
+     flex: 2;
+   }
+   #form-div{
+     flex: 1;
+   }
+   #discription-div{
+      margin-bottom: 23%;
+   }
+   #hotel-slide{
+      width: auto;
+   }
+   .carousel-control-prev-icon::before{
+      left:-20px;
+   }
+   .carousel-control-next-icon::after{
+      right: -20px;
+   }
+   
+} 
