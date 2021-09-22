@@ -1,4 +1,4 @@
-/*CHECKPOINT-9*/
+/*CHECKPOINT-10*/
 
 #CityImage{
     height: 150px;
@@ -36,6 +36,8 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 4% 0 4% 0;                  /* padding reset*/
+
+    flex-wrap: wrap;                    /*flex-wrap added*/        
 }
 #view-div{                 
    width: 100%;
@@ -48,6 +50,7 @@
 }
 #city-container{
     position: relative;                  /* for overlay*/
+    margin: 3%  5%;
 }
 #overlay{                                /* overlay styling */
     background: rgba(0, 0, 0, 0.5);
