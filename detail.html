@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
     <title>Hotel-Reservation-System</title>
-    
-                                                  <!--bootstrap link -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                                <!--bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   
-
-    <link rel="stylesheet" href="styles/common.css">  <!--Common Styling Link-->
-    <link rel="stylesheet" href="styles/detail.css">   <!--Detail CSS file-->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> <!--font CSS-->
-
+                                <!-- CSS -->
+    <link rel="stylesheet" href="styles/common.css"> 
+    <link rel="stylesheet" href="styles/detail.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
 </head>
-<body>
-                                              <!--Checkpoint 9-->
 
+
+<body>
+                                <!--Checkpoint 11-->
 <div id="main-div">
 
 
@@ -26,47 +25,13 @@
             <a href="index.html">   
                 <img id="LOGO" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
             </a>
-<!--LOGIN MODAL START-->
-<button id="login" class=" btn btn-light btn-sm" data-toggle="modal" data-target="#login-modal" data-backdrop="false">LOGIN</button>
-<div id="login-modal" class="modal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Please Login</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-         </div>
-            <div class="modal-body">
-                   <form class="form-horizontal">
-                         <div class="form-group">
-                               <label class="control-label col-sm-3" for="username">
-                                   Username:
-                               </label>
-                               <div class="col-sm-9">
-                                   <input type="text" id="username" class="form-control" placeholder="Enter username" name="username" required>
-                               </div>
-                         </div>
-                         <div class="form-group">
-                           <label class="control-label col-sm-3" for="password">
-                               Password:
-                           </label>
-                           <div class="col-sm-9">
-                               <input type="password" id="password" class="form-control" placeholder="Enter password" name="uname" autocomplete="off" required>
-                           </div>
-                     </div>
-                   </form>
-            </div>
-            <div class="modal-footer" id="login-footer">
-                  <button type="button" class="btn btn-primary">Login</button>
-            </div>
-        </div>
-
-    </div>
-  </div>     
-<!--LOGIN MODAL END-->           
-           
+            <button id="Sup"  class=" btn btn-light btn-sm" onclick="openModal()">LOG In</button>
             
-    </header>
+            <!-- Template -->
+            <div class="login-modal modal" id="login-modal"></div>
+   </header>
     
+
     <div id="space">&nbsp;</div>
 
     <div id="content-div">
@@ -100,29 +65,31 @@
             <div id="form-div">     
                     <form action="payment.html" autocomplete="off"> 
                                <div id="form-row" >
-                               <label for="num">Adults:</label> 
-                               <input type="number" id="num" min="1" required>
+                               <label for="p-number">Adults:</label> 
+                               <input type="number" id="p-number" min="1" onchange="calculate()"  required>
                                 </div>
+                                
                                 <div id="form-row">
                                 <label for="name">Name:</label>
                                 <input type="text" id="name" required>
                                  </div>
                                  <div id="form-row">
-                                <label for="pdate">From Date:</label>
-                                <input type="date" id="pdate" required>
+                                <label for="f-date">From Date:</label>
+                                <input type="date" id="f-date" required>
                                 </div>
                                <div id="form-row">
-                                 <label for="ptdate">To  Date :</label>
-                                 <input type="date" id="ptdate" required>
+                                 <label for="t-date">To  Date :</label>
+                                 <input type="date" id="t-date" onchange="calculate()" required>
                                 </div>
                                 <div id="form-row">
-                                 <label for="number1">Total  :</label>
-                                 <input type="number" id="number1" readonly>
+                                 <label for="total">Total  :</label>
+                                 <input type="text" id="total" value="Rs 0" readonly>
                                 </div>
                                 
                                 <button type="submit" id="bookNow" class="btn btn-outline-success">Book Now</button>
-                             
+                               
                             </form>
+                            <script src="scripts/detail.js"></script>
                 </div>
     </div>                
            
@@ -158,57 +125,15 @@
           </p> 
      </div> 
 
-  </div>
+    </div>
 
  
-  
-  <footer> 
-    <button id="contact" class=" btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal" data-backdrop="false">Contact Us</button>
-<!--Contact Modal START-->
-            <div id="contact-modal" class="modal" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title">Get in touch</h4>
-                           <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                        </div>
-                        <div class="modal-body">
-                               <h5>Thank you for reaching out!!!</h5>
-                               <h5>Please enter your email and we will get back to you</h5>
-                               <form class="form-horizontal">
-                                     <div class="form-group">
-                                           <label class="control-label col-sm-1" for="email">
-                                               Email:
-                                           </label>
-                                           <div class="col-sm-6">
-                                               <input type="email" id="email" class="form-control" placeholder="Enter your email id" name="email" required>
-                                           </div>
-                                     </div>
-                              </form>
-                        </div>
-                        <div class="modal-footer">
-                              <button type="button" class="btn btn-primary">Submit</button>
-                        </div>
-                    </div>
-            
-                </div>
-              </div>        
-              
-<!--Contact Modal END-->
-       
-
-        <div id="copyRight">  <!--div for Copy Right-->  
-        &copy; 2020 ROOM SERACH PVT LTD
-        </div>
-
-        <div id="social">    <!--div for social Media-->
-        <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png">
-        <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png">
-        <img id="SocialMedia" src="C:\Users\hkart\OneDrive\Documents\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png">
-        </div>
-
-    </footer>
-
+    
+    <!-- Template -->
+    <footer id="footer"></footer>
+    <!--JS -->
+    <script src="scripts/common.js"></script>   
+    <script src="scripts/detail.js"></script>
 </div>
 </body>
 </html> 

@@ -31,14 +31,15 @@
 
     outline: none;                      /* outline set*/
 }
-#CityCards{
+.CityCards{
     display: flex;                       /* flex property to CITY CARDS*/
     align-items: center;
     justify-content: space-evenly;
-    padding: 4% 0 4% 0;                  /* padding reset*/
-
+    padding: 3% 0 2% 0;                  /* padding reset*/
+   
     flex-wrap: wrap;                    /*flex-wrap added*/        
 }
+
 #view-div{                 
    width: 100%;
    text-align: center;
@@ -48,9 +49,13 @@
     display: flex;
     flex-direction: column;
 }
-#city-container{
+.city-container-1{
     position: relative;                  /* for overlay*/
-    margin: 3%  5%;
+    margin: 2%  3%;
+}
+.city-container-2{
+    position: relative;                  /* for overlay*/
+    margin: 2%  3%;
 }
 #overlay{                                /* overlay styling */
     background: rgba(0, 0, 0, 0.5);
@@ -68,8 +73,14 @@
     position: relative;
     top:45%;
 }
-#city-container:hover  #overlay{     /* hovering overlay*/
+.city-container-1:hover  #overlay{     /* hovering overlay*/
     opacity:1;
+}
+.city-container-2:hover  #overlay{     /* hovering overlay*/
+    opacity:1;
+}
+.city-container-2{
+    display: none;
 }
 #content-div{
     margin-top: 60px;
@@ -78,7 +89,9 @@
     background-color:gray;
     color: white;
 }
-
+.modal{
+    display: none;
+}
 @media  screen and (max-width:576px){                /* media query for max-width-576px*/
     #CityCards{
         

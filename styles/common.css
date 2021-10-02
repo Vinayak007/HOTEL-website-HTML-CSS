@@ -9,10 +9,7 @@ html,body{
 body{
     font-family:'Ubuntu', sans-serif;
 }
-a{
-   
-    
-}
+
 #main-div{
     height: 100%;
     width: 100%;
@@ -57,15 +54,60 @@ footer{
     height: 500px;
     width: 500px;
 }
-#login{                            
+#con{                  
+    margin-left: 2%;               
+}
+#social{                 
+   margin-right: 1%;               
+}
+#copyRight{                
+    font-size: 10px;                  
+}
+
+/* log details */
+#Sup{                            
     margin-right: 2%;                 
-  }
- #contact{                  
-     margin-left: 2%;               
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+#login,#contact{
+    background-color: #fff;
+    padding: 5px;
+    height: auto;
+    width: 400px;
+    flex-direction: column;
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 15% auto;
+}
+#login,#contact {
+   box-sizing: border-box !important;
+}
+.modal-row{
+     display: flex;
+    
+     margin: 2% 2% 5% 2%;
+     justify-content: space-between; 
  }
- #social{                 
-    margin-right: 1%;               
+ .modal-row input{
+     width: 60%;
+     border-radius: 5px;
  }
- #copyRight{                
-     font-size: 10px;                  
+ .modal-title{
+     display: flex;
+     justify-content: space-between;
  }
+ .modal-title button{
+     border: 0;
+     background-color: transparent;
+ } 
