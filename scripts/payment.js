@@ -1,4 +1,4 @@
-
+imageLoad();
 temp1();
 
 // using template literal property
@@ -20,4 +20,9 @@ function temp1(){
     <p><b>Total Amount:</b>${f}</p>`;
     document.getElementById("discription-2-div").innerHTML=t2;
 
+}
+function imageLoad(){
+    let p = document.getElementById("RaddisonImage");
+   let ur = localStorage.getItem("LinkName");
+   p.src=`${ur}`;
 }

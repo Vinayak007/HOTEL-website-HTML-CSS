@@ -1,10 +1,10 @@
 /*Checkpoint 9*/
 
-#HotelImage{
+.HotelImage{
      height: 250px;
      width: 250px;
 }
-#hotel-div{                    /* hotel container*/     
+.hotel-div{                    /* hotel container*/     
      width: 40%;
      background-color:lightgrey;
      margin: 4%;
@@ -15,11 +15,12 @@
      justify-content: flex-start;
 
      color: black;
+     cursor: pointer;
 }
-#hotel-div:hover{
+.hotel-div:hover{
      background-color: rosybrown;
 }
-#hotel-info{
+.hotel-info{
      margin-left: 2%;
 }
 #list-map-div{             
@@ -65,13 +66,16 @@
      top:0;
      left:0;
 }
+.star{
+     display: flex;
+ }
 @media  screen and (max-width:576px){              /* media query for max-width-576px*/
-#hotel-div{
+.hotel-div{
        clear: left;
        flex-direction: column;
        width: fit-content;
 }
-#HotelImage{
+.HotelImage{
        width: 90vw; 
 }
 #MapView img{
@@ -83,7 +87,7 @@
 
 }   
 @media screen and (min-width:576px) and (max-width:768px){   /* media query for min-width-576px & max-width-768px*/
-#hotel-div{
+.hotel-div{
         clear: left;
         width: 90%;
 }
