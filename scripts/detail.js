@@ -33,3 +33,30 @@ function calculate(){
  readme.value="Rs "+Total;             
  }
 }
+
+// change to payment.html FILE 
+function payDetail(){
+   
+    let fd = document.getElementById("f-date").value;
+    let td = document.getElementById("t-date").value;
+    let p = document.getElementById("p-number").value;
+    let to = document.getElementById("total").value;
+    let n = document.getElementById("name").value;
+    
+    let f_day = new Date(fd);
+    let d_day = new Date(td);
+
+ 
+    let Num =d_day.getTime()- f_day.getTime();
+    let dif =Num/(1000*3600*24);
+
+    
+    localStorage.setItem("na",n);                          // setting local storage
+    localStorage.setItem("ad",p);
+    localStorage.setItem("fd",fd);
+    localStorage.setItem("td",td);
+    localStorage.setItem("ng",dif);
+    localStorage.setItem("to",to);
+    window.location.href="payment.html";
+
+}
