@@ -41,18 +41,18 @@ function ListAllHotel(){
                    
                   }
                  }    
-                
-             
         }
     }
 }
 
 function goInDetail(id){
-//   console.log("WE GOT here=>"+id);
-  localStorage.setItem("LoName",id);
+
+          //console.log("WE GOT here=>"+id);
+           localStorage.setItem("LoName",id);
   
-  var ul =localStorage.getItem(id);
-  localStorage.setItem("LinkName",ul);
-  window.location.href="detail.html";
-//   alert(` The Click ID ==> [ ${id} ]`);
+          var ul =localStorage.getItem(id);
+  
+          localStorage.setItem("LinkName",ul);
+          window.location.href="detail.html";
+
 }

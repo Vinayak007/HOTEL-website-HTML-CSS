@@ -1,4 +1,5 @@
 // Checkpoint 12
+
 imageLoad();
 temp1();
 
@@ -33,8 +34,8 @@ function temp1(){
 }
 function imageLoad(){
     let p = document.getElementById("RaddisonImage");
-   let ur = localStorage.getItem("LinkName");
-   p.src=`${ur}`;
+    let ur = localStorage.getItem("LinkName");
+    p.src=`${ur}`;
 }
 function letsPAY(){
     alert(`
