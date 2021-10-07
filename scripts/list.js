@@ -1,3 +1,5 @@
+//Checkpoint 12
+
 ListAllHotel(); // call
 
 
