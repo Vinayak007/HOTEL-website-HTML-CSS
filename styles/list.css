@@ -1,4 +1,4 @@
-/*Checkpoint 9*/
+/*Checkpoint 13*/
 
 .HotelImage{
      height: 250px;
@@ -68,6 +68,25 @@
 }
 .star{
      display: flex;
+ }
+ #main-div{
+      display: none;
+ }
+ #loader-div{                                        /* styling for LOADER*/
+     height: 70px;
+     width: 70px;
+     border-radius: 50%;
+     border: 12px solid #f3f3f3;
+     border-top: 12px solid  #444444;
+     margin:auto;
+     margin-top: 20%;
+     margin-bottom: 20%;
+ 
+     animation: spin 1s linear infinite;              
+ }
+ @keyframes spin {                                   
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
  }
 @media  screen and (max-width:576px){              /* media query for max-width-576px*/
 .hotel-div{

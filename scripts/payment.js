@@ -1,5 +1,9 @@
-// Checkpoint 12
+// Checkpoint 13
 
+$(window).on('load',function(){                      //LOADER activated before WEB API gets loaded
+    $("#loader-div").fadeOut(3000);
+    $("#main-div").fadeIn(1000);
+});
 imageLoad();
 temp1();
 
